@@ -1,0 +1,5 @@
+- hosts: api_servers
+  sudo: yes
+  tasks:
+    - name: Installs gunicorn
+      apt: pkg=gunicorn state=installed update_cache=true
